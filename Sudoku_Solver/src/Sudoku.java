@@ -45,7 +45,7 @@ public class Sudoku {
             //sudoku solved
         }
         //put the answer and back track
-        for(int number = 1;number<=9;number++){
+        for(int number = 1;number<=board.length;number++){
             if(isSafe(board,row,col,number)){
                 board[row][col]=number;
                 //checking if we can solve this
